@@ -1,0 +1,14 @@
+.featuredProducts {
+  padding: 0 1rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  background: yellow;
+}
+button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  padding: 0;
+}

@@ -1,0 +1,11 @@
+.search {
+  font-family: inherit;
+  text-transform: capitalize;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-size: inherit;
+  max-width: 11rem;
+  border: 0.1rem solid rgb(59, 59, 59);
+}

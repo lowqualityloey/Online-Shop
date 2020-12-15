@@ -76,22 +76,34 @@ function App() {
   }, [filteredProducts, currentPage, paginationLimit]);
 
   return (
-    <div className="container">
-      <h1>Sunglass Shop</h1>
-      <div className="toolbar">
-        <CategoryFilter setCategory={setCategory} categories={categories} />
-        <SortBy setSortBy={setSortBy} />
-        <Search setSearch={setSearch} />
+    <>
+      <div className="container">
+        <h1>
+          <span className="icon">
+            <ion-icon name="leaf-outline"></ion-icon>
+          </span>
+          Z E N P A I
+        </h1>
       </div>
-      {isFeaturedDisplayed && (
-        <FeaturedProducts
-          products={featuredProducts}
-          setIsFeaturedDisplayed={setIsFeaturedDisplayed}
-        />
-      )}
-      <Products products={displayedProducts} />
-      <Pagination pageList={pageList} setCurrentPage={setCurrentPage} />
-    </div>
+      <div className="container">
+        {" "}
+        {isFeaturedDisplayed && (
+          <FeaturedProducts
+            products={featuredProducts}
+            setIsFeaturedDisplayed={setIsFeaturedDisplayed}
+          />
+        )}
+      </div>
+      <div className="container">
+        <div className="toolbar">
+          <CategoryFilter setCategory={setCategory} categories={categories} />
+          <SortBy setSortBy={setSortBy} />
+          <Search setSearch={setSearch} />
+        </div>
+        <Products products={displayedProducts} />
+        <Pagination pageList={pageList} setCurrentPage={setCurrentPage} />
+      </div>
+    </>
   );
 }
 

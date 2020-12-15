@@ -1,1 +1,124 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  background-color: #f6f6f6;
+  color: #333333;
+}
+.container {
+  padding: 1.1rem 1rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.container:nth-child(2) {
+  background: #fff;
+  max-width: 100%;
+  min-height: 22rem;
+}
+.container:nth-child(3) {
+  background: white;
+}
+h1 {
+  color: #333333;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0 3rem;
+}
+h1 .icon {
+  color: rgb(38, 142, 67);
+  font-size: 4.3rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+.product-grid,
+.product-grid-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.product-grid-item {
+  background: #fff;
+  padding: 2rem;
+  display: grid;
+  border: 0.1rem solid rgb(148, 148, 148);
+  border-radius: var(--border-radius);
+}
+.product-grid-item img {
+  height: 240px;
+}
+.product-grid-item button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
+  max-width: 18rem;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.product-grid-item button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.product-grid-item label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.toolbar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.filterBy,
+.sortBy {
+  display: inline-block;
+}
+label {
+  color: #333333;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+select {
+  font-family: inherit;
+  text-transform: capitalize;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  display: inline-block;
+  min-width: 10rem;
+  border-radius: 0.25rem;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h3 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 30rem) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin: 3rem 0 2rem;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
