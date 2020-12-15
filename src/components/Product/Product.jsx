@@ -11,7 +11,7 @@ const Product = ({ name, image, description, price, priceId }) => {
           checkout(priceId);
         }}
       >
-        Buy now for {price}
+        {price}
       </button>
     </li>
   );
