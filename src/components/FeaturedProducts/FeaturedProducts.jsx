@@ -1,14 +1,14 @@
 import "./FeaturedProducts.css";
 
 const FeaturedProducts = ({ products, setIsFeaturedDisplayed }) => {
-  const schnitzel = () => setIsFeaturedDisplayed(false);
+  const hideFeaturedProducts = () => setIsFeaturedDisplayed(false);
 
   return (
     <div className="featuredProducts">
-      <h1>Featured Products</h1>
-      <button data-testid="close-button" onClick={schnitzel}>
+      <button data-testid="close-button" onClick={hideFeaturedProducts}>
         <ion-icon name="close"></ion-icon>
       </button>
+
       <ul>
         {products.map((product) => (
           <li key={product.id}>

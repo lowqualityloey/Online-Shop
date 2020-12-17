@@ -1,8 +1,8 @@
 .featuredProducts {
   padding: 0 1rem;
-  max-width: 75rem;
+  max-width: 70rem;
   margin: 0 auto;
-  background: yellow;
+  background: #fff;
 }
 button {
   float: right;
@@ -11,4 +11,16 @@ button {
   background-color: transparent;
   font-size: 1.6rem;
   padding: 0;
+}
+
+img {
+  height: 12rem;
+}
+
+li {
+  padding: 2rem;
+  border: 0.1rem solid rgb(148, 148, 148);
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  list-style: none;
 }
