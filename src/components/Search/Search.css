@@ -1,14 +1,22 @@
 .search {
   font-family: inherit;
-  text-transform: capitalize;
   display: inline-block;
   border-radius: 0.25rem;
   font-size: inherit;
-  max-width: 11rem;
   border: 0.1rem solid rgb(59, 59, 59);
 }
 input {
+  max-width: 11rem;
   display: inline-block;
   margin-right: 2rem;
+  margin-top: 0.5rem;
   padding: 0.5rem;
+  font-style: italic;
+}
+input::placeholder {
+  color: #606060;
+}
+input:focus::placeholder {
+  color: transparent;
+  transition: 0.25s ease-in-out;
 }

@@ -10,7 +10,7 @@ const Search = ({ setSearch }) => {
         onChange={onChangeInput}
         className="search"
         type="text"
-        placeholder="search"
+        placeholder="Search an item..."
         autoComplete="off"
       />
     </>
