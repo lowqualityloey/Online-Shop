@@ -1,5 +1,9 @@
 const getFeaturedProducts = (products) => {
-  return [];
+  let featuredProducts = products.filter(
+    (product) => product.metadata.featured === "yes"
+  );
+
+  return featuredProducts;
 };
 
 export { getFeaturedProducts };

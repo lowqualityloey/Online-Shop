@@ -57,7 +57,8 @@ img {
   border-radius: var(--border-radius);
 }
 .product-grid-item img {
-  height: 240px;
+  margin: 0 auto;
+  max-height: 15rem;
 }
 .product-grid-item button {
   display: block;
