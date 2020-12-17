@@ -19,6 +19,15 @@ const getProducts = async () => {
   const res2 = await fetch(`${process.env.REACT_APP_API_URL}/prices`);
   const prices = await res2.json();
 
+  const res = await fetch(`${process.env.REACT_APP_API_URL}/products`);
+  const products = await res.json();
+
+  const res2 = await fetch(`${process.env.REACT_APP_API_URL}/prices`);
+  const prices = await res2.json();
+
+  // console.log(products);
+  // console.log(prices);
+
   return getProductsWithPrices(products, prices);
 };
 

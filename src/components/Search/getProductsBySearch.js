@@ -1,5 +1,8 @@
 const getProductsBySearch = (products, searchPrefix) => {
-  return products;
+  let searchProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchPrefix.toLowerCase())
+  );
+  return searchProducts;
 };
 
 export { getProductsBySearch };
