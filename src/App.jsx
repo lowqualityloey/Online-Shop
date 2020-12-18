@@ -84,16 +84,13 @@ function App() {
           </span>
           Z E N P A I
         </h1>
-      </div>
-      <div className="container">
-        {" "}
-        {isFeaturedDisplayed && (
-          <FeaturedProducts
-            products={featuredProducts}
-            setIsFeaturedDisplayed={setIsFeaturedDisplayed}
-          />
-        )}
-      </div>
+      </div>{" "}
+      {isFeaturedDisplayed && (
+        <FeaturedProducts
+          products={featuredProducts}
+          setIsFeaturedDisplayed={setIsFeaturedDisplayed}
+        />
+      )}
       <div className="container">
         <div className="toolbar">
           <CategoryFilter setCategory={setCategory} categories={categories} />

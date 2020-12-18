@@ -17,9 +17,7 @@ body {
   margin: 0 auto;
 }
 .container:nth-child(2) {
-  background: #fff;
-  max-width: 100%;
-  min-height: 22rem;
+  background: white;
 }
 .container:nth-child(3) {
   background: white;
@@ -67,6 +65,7 @@ img {
   border: none;
   padding: 1rem;
   font-size: 1rem;
+  background-color: transparent;
 }
 .product-grid-item button:hover {
   text-decoration: underline;
